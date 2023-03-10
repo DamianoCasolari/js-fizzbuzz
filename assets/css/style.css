@@ -1,0 +1,15 @@
+/* Utility selector  */
+
+:root {
+    --fb-background : #083B4C;
+    --fb-primary : #1389B2;
+    --fb-multiple-3 : #0CD6A1;
+    --fb-multiple-5 : #FFD166;
+    --fb-multiple-15 : #F0466F;
+}
+
+/* General selector  */
+
+body {
+    background-color: var(--fb-background);
+}
