@@ -8,7 +8,15 @@
     --fb-multiple-15 : #F0466F;
 }
 
+h1 {
+    transition-duration:1s ;
+}
+
 /* Background-Color  */
+
+body {
+    background-color: var(--fb-background);
+}
 
 .my_baground_fizz {
     background-color: var(--fb-multiple-3);
@@ -18,14 +26,13 @@
 }
 .my_baground_fizzBuzz {
     background-color: var(--fb-multiple-15);
+    animation-name: tilt-shaking;
+    animation-iteration-count: infinite;
+    animation-duration: 0.3s;
+    
 }
 .my_baground_standard {
     background-color: var(--fb-primary);;
-}
-
-
-body {
-    background-color: var(--fb-background);
 }
 
 
@@ -36,3 +43,16 @@ body {
 }
 
 
+/* ANIMATION */
+
+h1:hover {
+    transform: scale(2);
+}
+
+@keyframes tilt-shaking {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+}
