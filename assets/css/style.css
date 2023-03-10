@@ -8,13 +8,31 @@
     --fb-multiple-15 : #F0466F;
 }
 
-/* General selector  */
+/* Background-Color  */
+
+.my_baground_fizz {
+    background-color: var(--fb-multiple-3);
+}
+.my_baground_buzz {
+    background-color: var(--fb-multiple-5);
+}
+.my_baground_fizzBuzz {
+    background-color: var(--fb-multiple-15);
+}
+.my_baground_standard {
+    background-color: var(--fb-primary);;
+}
+
 
 body {
     background-color: var(--fb-background);
 }
 
+
+/* Single Box  */
+
 .box_fizz > .card{
     aspect-ratio: 1 / 1;
-    background-color: var(--fb-primary);
 }
+
+
