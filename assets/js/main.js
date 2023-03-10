@@ -10,8 +10,8 @@ if (fizz_number % 15 == 0) {
     fizz_number = "Fizz"; 
  }
  console.log(fizz_number)
-rowEl.innerHTML += `<div class="box_fizz col-2 p-1">
-<div class="card d-flex align-items-center justify-content-center fs-4">
+rowEl.innerHTML += `<div class="box_fizz col-6 col-sm-3 col-md-2 p-2">
+<div class="card d-flex align-items-center justify-content-center fs-3 fw-bold">
     ${fizz_number}
 </div>
 </div>`
