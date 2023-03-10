@@ -13,3 +13,8 @@
 body {
     background-color: var(--fb-background);
 }
+
+.box_fizz > .card{
+    aspect-ratio: 1 / 1;
+    background-color: var(--fb-primary);
+}
