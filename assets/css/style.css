@@ -41,6 +41,9 @@ body {
 .box_fizz > .card{
     aspect-ratio: 1 / 1;
 }
+.box_fizz > .card:hover{
+    animation: tilt infinite 0.1s;
+}
 
 
 /* ANIMATION */
@@ -55,4 +58,11 @@ h1:hover {
     50% { transform: rotate(0deg); }
     75% { transform: rotate(-5deg); }
     100% { transform: rotate(0deg); }
+}
+@keyframes tilt {
+    0% { transform: translateX(0px); }
+    25% { transform: translateX(2px); }
+    50% { transform: translateX(-2px); }
+    75% { transform: translateX(2px); }
+    100% { transform: translateX(0px);  }
 }
